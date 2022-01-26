@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/register HTTP/1.1
+content-type: application/json
+
+{
+    "fn": "John",
+    "ln": "Doe",
+    "email": "johndoe@gmail.com",
+    "cl": "https://www.linkedin.com/in/johndoe",
+    "body": "Hello, I am John Doe and I am a software engineer."
+}

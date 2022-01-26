@@ -25,6 +25,15 @@ model User {
 }
 
 model Newsletter {
-    id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
-    email String @unique
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  email String @unique
+}
+
+model Contact {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  firstName String
+  lastName String
+  email String
+  contactLinks String? @default("Unknown")
+  body String
 }
