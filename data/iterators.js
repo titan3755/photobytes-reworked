@@ -66,3 +66,29 @@ export const benefitCards = [
         desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
     }
 ]
+export const faqCards = [
+    {
+        title: 'What is the best way to get a website?',
+        desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        title: 'How do I get a website?',
+        desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        title: 'How do I get the best prices?',
+        desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        title: 'What is the best way to get a website?',
+        desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        title: 'How do I get a website?',
+        desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        title: 'How do I get the best prices?',
+        desc: 'lorem ipsum dolor sit amet, consecincididunt ut labore et dolore magna aliqua.'
+    }
+]

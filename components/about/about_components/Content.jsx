@@ -5,7 +5,7 @@ import { faAddressBook } from '@fortawesome/free-solid-svg-icons'
 function ContentCard ({title, description, imgUrl}) {
     return (
         <Fragment>
-            <div className="container flex flex-col align-middle shadow-2xl mx-auto justify-start w-[500px]">
+            <div className="container flex flex-col rounded-lg align-middle shadow-2xl mx-auto justify-start w-[500px]">
                 <img src={imgUrl} className="w-full h-[300px] object-cover rounded-t-lg" alt="" />
                 <div className="container rounded-b-lg flex flex-col align-bottom justify-center p-10">
                     <div className="container flex flex-row align-middle justify-start mb-5">
