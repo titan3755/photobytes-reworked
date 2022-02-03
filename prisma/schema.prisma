@@ -15,7 +15,7 @@ model User {
   id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
   username String @unique
   password String
-  email String @unique
+  email String
   firstName String? @default("Unknown")
   lastName String? @default("Unknown")
   country String? @default("Unknown")

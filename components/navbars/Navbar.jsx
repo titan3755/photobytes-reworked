@@ -33,7 +33,9 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [visible, setVisible] = useState(false)
-  const handler = () => setVisible(true)
+  function handler () {
+    setVisible(true)
+  }
   return (
     <Fragment>
       <Popover className="relative bg-white">
@@ -42,9 +44,9 @@ export default function Navbar() {
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link href="/">
                 <a>
-                  <span className="sr-only">Workflow</span>
+                  <span className="sr-only">PhotoBytes Studios</span>
                   <img
-                    className="min-h-[60px] text-center w-full sm:h-10 bg-black rounded-full p-0.5"
+                    className="min-h-[62px] text-center sm:h-[60px] bg-black rounded-full p-0.5"
                     src="./final.svg"
                     alt=""
                   />
@@ -124,16 +126,15 @@ export default function Navbar() {
               </Popover>
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                Sign in
-              </a>
-              <a
-                href="#"
+              <button className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                Login
+              </button>
+              <button
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700"
                 onClick={handler}
               >
-                Sign up
-              </a>
+                Register
+              </button>
             </div>
           </div>
         </div>
@@ -153,9 +154,9 @@ export default function Navbar() {
                 <div className="flex items-center justify-between">
                   <div>
                     <img
-                      className="h-8 w-auto"
+                      className="h-[62px] w-auto"
                       src="./final.svg"
-                      alt="Workflow"
+                      alt=""
                     />
                   </div>
                   <div className="-mr-2">
@@ -168,13 +169,16 @@ export default function Navbar() {
               </div>
               <div className="py-6 px-5 space-y-6">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Pricing
-                  </a>
-
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Docs
-                  </a>
+                  <Link href="/about">
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      About
+                    </a>
+                  </Link>
+                  <Link href="/contact">     
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Contact
+                    </a>
+                  </Link>
                   {resources.map((item) => (
                     <a
                       key={item.name}
@@ -186,18 +190,17 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div>
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  <button
+                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-500 hover:bg-rose-700"
                     onClick={handler}
                   >
-                    Sign up
-                  </a>
+                    Register
+                  </button>
                   <p className="mt-6 text-center text-base font-medium text-gray-500">
                     Existing customer?{' '}
-                    <a href="#" className="text-red-600 hover:text-red-500">
-                      Sign in
-                    </a>
+                    <button className="text-red-600 hover:text-red-500">
+                      Login
+                    </button>
                   </p>
                 </div>
               </div>

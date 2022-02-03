@@ -13,13 +13,13 @@ export default async function contact(req, res) {
           body: body
         }
       })
-      res.status(200).json({
+      res.status(201).json({
         message: response,
         success: true
       })
     }
     catch (err) {
-      res.status(500).json({
+      res.status(406).json({
         message: err.message,
         success: false
       })

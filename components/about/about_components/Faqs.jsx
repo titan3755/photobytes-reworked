@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { faqCards } from '../../../data/iterators'
+import { v4 } from 'uuid'
 
 function FaqCard ({title, desc}) {
     return (
@@ -23,7 +24,7 @@ export default function Faqs () {
                 <div className="container grid grid-rows-2 grid-cols-3 gap-8 my-10">
                     {
                         faqCards.map(({title, desc}) => (
-                            <FaqCard key={title} title={title} desc={desc} />
+                            <FaqCard key={v4()} title={title} desc={desc} />
                         ))
                     }
                 </div>

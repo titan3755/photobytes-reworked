@@ -12,10 +12,10 @@ export default async function register (req, res) {
                     email: body.email
                 }
             })
-            res.status(200).json({message: user, success: true})
+            res.status(201).json({message: user, success: true})
         }
         catch (err) {
-            res.status(500).json({
+            res.status(406).json({
                 message: err.message,
                 success: false
             })

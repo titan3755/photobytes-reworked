@@ -5,7 +5,7 @@ import { featureCards } from '../../../data/iterators'
 function FeatureCard ({title, desc, icon, color, imgUrl}) {
     return (
         <Fragment>
-            <div className="container flex w-[1000px] rounded-lg flex-col align-middle justify-center shadow-xl hover:shadow-2xl transition delay-100">
+            <div className="container mx-auto flex sm:w-[500px] lg:w-[1000px] rounded-lg flex-col align-middle justify-center shadow-xl hover:shadow-2xl transition delay-100">
                 <div className="container mb-3">
                     <img src={imgUrl} alt="" className="min-w-full object-cover h-[200px] rounded-t-lg" />
                 </div>
@@ -21,14 +21,16 @@ function FeatureCard ({title, desc, icon, color, imgUrl}) {
 export default function FeaturesSection () {
     return (
         <Fragment>
-            <div className="container flex flex-row min-w-full p-10 bg-slate-100 gap-5">
-                <div className="container flex flex-col align-middle justify-center ml-20 p-12">
-                    <p className="text-sm text-slate-500 mb-2">Achieve More</p>
-                    <h1 className="font-extrabold text-3xl font-sans w-[350px] text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+            <div className="container flex flex-col justify-center align-middle min-w-full p-10 bg-slate-100 gap-5 xl:flex-row">
+                <div className="container flex flex-col align-middle min-w-full lg:min-w-min justify-center xl:ml-20 xl:p-12">
+                    <p className="text-sm text-center xl:text-left mx-auto xl:mx-0 text-slate-500 mb-2">Achieve More</p>
+                    <h1 className="font-extrabold text-center xl:text-left xl:mx-0 xl:w-full text-3xl font-sans w-[50%] mx-auto mb-4 text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
                 </div>
-                {
-                    featureCards.map(card => <FeatureCard key={card.title} {...card} />)
-                }
+                <div className="container flex flex-col min-w-full lg:min-w-[60%] lg:flex-row gap-5">
+                    {
+                        featureCards.map(card => <FeatureCard key={card.title} {...card} />)
+                    }
+                </div>
             </div>
         </Fragment>
     )
