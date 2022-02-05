@@ -1,7 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Link from 'next/link'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import Register from '../auth/registration/Register'
+import Login from '../auth/authentication/Login'
 import { Popover, Transition } from '@headlessui/react'
 import {
   MenuIcon,
@@ -11,6 +12,10 @@ import {
   CodeIcon
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { toast } from 'react-toastify'
+import { useSession, signOut } from 'next-auth/react'
+import { useRouter } from 'next/router'
+import UserOptions from './navbar_components/UserOptions'
 const resources = [
   {
     name: 'Help Center',
@@ -32,9 +37,18 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [visible, setVisible] = useState(false)
-  function handler () {
-    setVisible(true)
+  const router = useRouter()
+  const { data, status } = useSession()
+  const [visibleRegistrationModal, setVisibleRegistrationModal] = useState(false)
+  const [visibleLoginModal, setVisibleLoginModal] = useState(false)
+  function handlerRegistration () {
+    setVisibleRegistrationModal(true)
+  }
+  function handlerLogin () {
+    setVisibleLoginModal(true)
+  }
+  function sCallback () {
+    router.reload()
   }
   return (
     <Fragment>
@@ -126,15 +140,30 @@ export default function Navbar() {
               </Popover>
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <button className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                Login
-              </button>
-              <button
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700"
-                onClick={handler}
-              >
-                Register
-              </button>
+              {
+                data
+                  ? (
+                    <Fragment>
+                      <UserOptions username={data.user.name} />
+                    </Fragment>
+                  )
+                  : (
+                    <Fragment>
+                      <button 
+                        className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                        onClick={handlerLogin}
+                      >
+                        Login
+                      </button>
+                      <button
+                        className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700"
+                        onClick={handlerRegistration}
+                      >
+                        Register
+                      </button>
+                    </Fragment>
+                  )
+              }
             </div>
           </div>
         </div>
@@ -192,13 +221,16 @@ export default function Navbar() {
                 <div>
                   <button
                     className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-500 hover:bg-rose-700"
-                    onClick={handler}
+                    onClick={handlerRegistration}
                   >
                     Register
                   </button>
                   <p className="mt-6 text-center text-base font-medium text-gray-500">
                     Existing customer?{' '}
-                    <button className="text-red-600 hover:text-red-500">
+                    <button 
+                      className="text-red-600 hover:text-red-500"
+                      onClick={handlerLogin}  
+                    >
                       Login
                     </button>
                   </p>
@@ -208,7 +240,8 @@ export default function Navbar() {
           </Popover.Panel>
         </Transition>
       </Popover>
-      <Register visible={visible} setVisible={setVisible} />
+      <Register visible={visibleRegistrationModal} setVisible={setVisibleRegistrationModal} />
+      <Login visible={visibleLoginModal} setVisible={setVisibleLoginModal} successCallback={sCallback} />
     </Fragment>
   )
 }

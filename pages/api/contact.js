@@ -1,6 +1,6 @@
 import prisma from '../../clients/prisma'
 
-export default async function contact(req, res) {
+export default async function contact (req, res) {
   if (req.method === 'POST') {
     try {
       const { fn, ln, email, cl, body } = req.body

@@ -1,4 +1,4 @@
-import { Modal, Text, Input, Row, Checkbox, Button } from '@nextui-org/react';
+import { Modal, Text, Input, Row, Checkbox, Button } from '@nextui-org/react'
 import { Fragment, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons'
