@@ -36,8 +36,8 @@ export default function Form () {
             <form onSubmit={contactFormSubmissionHandler}>
                 <div className="container flex flex-col-reverse lg:flex-row align-middle justify-center p-5 min-w-full h-[1000px] my-5">
                     <div className="container flex flex-col align-middle justify-center w-full mx-auto lg:mx-0 lg:w-[50%] h-full p-5 md:p-10 lg:p-16">
-                        <h1 className="text-4xl font-extrabold font-sans text-center mb-4">Lorem ipsum dolor sit amet</h1>
-                        <p className="text-base font-normal font-sans text-center text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, officia impedit voluptas corrupti voluptatum magni.</p>
+                        <h1 className="text-4xl font-extrabold font-sans text-center mb-4">Contact Form</h1>
+                        <p className="text-base font-normal font-sans text-center text-slate-400">If you got any enquiries, contact us via the form below and we will reach out to you swiftly.</p>
                         <div className="container flex flex-col md:flex-row gap-5 justify-center align-middle my-2 mt-7">
                             <input type="text" value={inputValues.fn} onChange={(e) => {setInputValues({...inputValues, fn: e.target.value})}} className="md:w-[50%] w-full rounded-md p-2 pl-5 pr-5 border-[1px] border-slate-500 bg-white font-sans text-base font-medium focus:outline-2 focus:outline-rose-500" placeholder="First Name" name="fn" required />
                             <input type="text" value={inputValues.ln} onChange={(e) => {setInputValues({...inputValues, ln: e.target.value})}}  className="md:w-[50%] w-full rounded-md p-2 pl-5 pr-5 border-[1px] border-slate-500 bg-white font-sans text-base font-medium focus:outline-2 focus:outline-rose-500" placeholder="Last Name" name="ln" required />

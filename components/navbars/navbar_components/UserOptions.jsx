@@ -7,13 +7,13 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function UserOptions ({ username }) {
+export default function UserOptions ({ username, btnLength }) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex justify-center w-full rounded-md border border-white shadow-sm px-4 py-2 bg-red-500 text-sm font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-rose-500">
+        <Menu.Button className="inline-flex justify-center w-full rounded-md border border-white shadow-sm px-4 py-2 bg-red-500 text-sm font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-rose-500" style={{width: btnLength}}>
           {username}
-          <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+          <ChevronDownIcon className="-mr-2 ml-2 h-5 w-5" aria-hidden="true" />
         </Menu.Button>
       </div>
 

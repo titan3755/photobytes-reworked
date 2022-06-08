@@ -15,13 +15,12 @@ model User {
   id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
   username String @unique
   password String
-  email String
+  email String @unique
   firstName String? @default("Unknown")
   lastName String? @default("Unknown")
   country String? @default("Unknown")
   socials String? @default("Unknown")
   admin Boolean @default(false)
-  newsletter Boolean @default(false)
 }
 
 model Newsletter {

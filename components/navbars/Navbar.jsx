@@ -219,21 +219,35 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div>
-                  <button
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-500 hover:bg-rose-700"
-                    onClick={handlerRegistration}
-                  >
-                    Register
-                  </button>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?{' '}
-                    <button 
-                      className="text-red-600 hover:text-red-500"
-                      onClick={handlerLogin}  
-                    >
-                      Login
-                    </button>
-                  </p>
+                  {
+                    data
+                      ? (
+                        <Fragment>
+                          <div className="container min-w-full flex flex-row justify-center align-middle">
+                            <UserOptions username={data.user.name} btnLength="160px" />
+                          </div>
+                        </Fragment>
+                      )
+                      : (
+                        <Fragment>
+                          <button
+                            className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-500 hover:bg-rose-700"
+                            onClick={handlerRegistration}
+                          >
+                            Register
+                          </button>
+                          <p className="mt-6 text-center text-base font-medium text-gray-500">
+                            Existing customer?{' '}
+                            <button 
+                              className="text-red-600 hover:text-red-500"
+                              onClick={handlerLogin}  
+                            >
+                              Login
+                            </button>
+                          </p>
+                        </Fragment>
+                      )
+                  }
                 </div>
               </div>
             </div>

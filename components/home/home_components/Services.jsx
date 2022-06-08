@@ -20,7 +20,7 @@ export default function ServicesSection () {
             <div className="container flex flex-col align-middle justify-center mx-auto mt-20 mb-2">
                 <h2 className="text-black text-center text-4xl font-normal font-serif mb-1 mx-auto">Our Services</h2>
                 <hr className="bg-slate-800 h-[2px] w-28 mx-auto mb-5" />
-                <p className="text-slate-600 text-base lg:text-lg font-normal font-sans text-center w-[70%] mx-auto mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quasi. Lorem ipsum dolor sit amet consectetur consectetur adipisicing elit. Mollitia, fugit.</p>
+                <p className="text-slate-600 text-base lg:text-lg font-normal font-sans text-center w-[50%] mx-auto mb-5">We provide the most demanding of online services. The major ones we provide are listed below along with their description.</p>
                 <div className="container p-5 flex flex-col md:grid md:grid-rows-2 md:grid-cols-2 md:gap-4 mx-auto md:w-[60%]">
                     {
                         serviceCards.map(card => <ServiceCard key={card.title} {...card} />)

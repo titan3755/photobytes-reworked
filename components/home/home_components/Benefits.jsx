@@ -1,5 +1,4 @@
 import { Fragment } from 'react'
-import { benefitCards } from '../../../data/iterators'
 
 export default function Benefits () {
     return ( 

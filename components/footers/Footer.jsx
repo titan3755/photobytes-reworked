@@ -14,16 +14,6 @@ export default function Footer () {
                                         <ul>
                                             <li>
                                                 <Link href="/">
-                                                    <a className="text-xs lg:text-sm leading-none hover:text-brand :hover:text-brand text-gray-800 :text-gray-50">Components</a>
-                                                </Link>
-                                            </li>
-                                            <li className="mt-6">
-                                                <Link href="/">
-                                                    <a className="text-xs lg:text-sm leading-none hover:text-brand :hover:text-brand text-gray-800 :text-gray-50">Templates</a>
-                                                </Link>
-                                            </li>
-                                            <li className="mt-6">
-                                                <Link href="/">
                                                     <a className="text-xs lg:text-sm leading-none hover:text-brand :hover:text-brand text-gray-800 :text-gray-50">Pricing</a>
                                                 </Link>
                                             </li>

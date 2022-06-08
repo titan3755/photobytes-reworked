@@ -23,6 +23,6 @@ export default async function login (req, res) {
         }
     }
     else {
-        res.status(403).json({message: 'Method not allowed'})
+        res.status(405).json({message: 'Method not allowed'})
     }
 }
