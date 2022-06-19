@@ -6,7 +6,7 @@ function ServiceCard ({title, desc, icon, color}) {
     return (
         <Fragment>
             <div className="container flex flex-col align-middle justify-center p-5 shadow-lg hover:shadow-2xl transition delay-100">
-                <FontAwesomeIcon className="my-6 text-center h-[80px] mx-auto" style={{color: color}} icon={icon} />
+                <FontAwesomeIcon className="my-6 text-center text-5xl mx-auto" style={{color: color}} icon={icon} />
                 <h1 className="text-black text-center uppercase font-sans font-medium text-2xl mb-3">{title}</h1>
                 <p className="text-sm text-center font-sans text-neutral-700 mb-3 w-[70%] mx-auto">{desc}</p>
             </div>
