@@ -10,7 +10,7 @@ export default NextAuth({
                 password: {  label: "Password", type: "password" }
             },
             async authorize(credentials, req) {
-                const res = await fetch('http://localhost:3000/api/login', {
+                const res = await fetch(process.env.WEBSITE_DOM, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
