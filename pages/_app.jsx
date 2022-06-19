@@ -18,9 +18,6 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
   return (
     <Fragment>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"/>
         <title>PhotoBytes Studios{router.pathname === "/" ? " - Home" : router.pathname === "/contact" ? " - Contact" : router.pathname === "/about" ? " - About" : router.pathname === "/privacy" ? " - Privacy & ToS" : ""}</title>
       </Head>
       <SessionProvider session={session}>
