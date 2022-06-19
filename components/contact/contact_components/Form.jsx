@@ -48,7 +48,7 @@ export default function Form () {
                         <button type="submit" className="bg-rose-500 p-4 text-center text-white text-xl font-bold rounded-lg hover:bg-rose-600 my-4 w-[300px] md:w-[450px] lg:w-[300px] xl:w-[500px] mx-auto">Submit</button>
                     </div>
                     <div className="container lg:flex lg:flex-row lg:align-middle lg:justify-center w-full hidden lg:w-[50%] h-full p-16">
-                        <img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" className="object-cover h-auto lg:h-[700px] w-full mt-10 rounded-md" alt="" />
+                        <img src="https://images.unsplash.com/photo-1528372444006-1bfc81acab02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" />
                     </div>
                 </div>
             </form>

@@ -84,9 +84,14 @@ export default function Navbar() {
                   About Us
                 </a>
               </Link>
-                <a href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="/contact">
+                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Contact
                 </a>
+              </Link>
+              <a className="text-base font-medium text-gray-500 hover:text-gray-900" target="_blank" href="https://www.facebook.com/PhotoBytes999" rel="noopenner noreferrer">
+                Order
+              </a>
               <Popover className="relative">
                 {({ open }) => (
                   <>
@@ -207,7 +212,10 @@ export default function Navbar() {
                     <a className="text-base font-medium text-gray-900 hover:text-gray-700">
                       Contact
                     </a>
-                  </Link>
+                  </Link>   
+                  <a className="text-base font-medium text-gray-900 hover:text-gray-700" target="_blank" href="https://www.facebook.com/PhotoBytes999" rel="noopener noreferrer">
+                    Order
+                  </a>
                   {resources.map((item) => (
                     <a
                       key={item.name}

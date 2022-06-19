@@ -27,17 +27,17 @@ export default function UserOptions ({ username, btnLength }) {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-1">
+          <div>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    'text-slate-500',
+                    'block px-4 py-2 text-sm',
+                    'bg-gray-200',
                   )}
                 >
-                  Profile
+                  Profile (coming soon)
                 </a>
               )}
             </Menu.Item>
