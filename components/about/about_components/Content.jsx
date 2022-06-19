@@ -10,7 +10,7 @@ function OldContentCard ({title, description, imgUrl}) {
                 <img src={imgUrl} className="w-full h-[300px] object-cover rounded-t-lg" alt="" />
                 <div className="container rounded-b-lg flex flex-col align-bottom justify-center p-10">
                     <div className="container flex flex-row align-middle justify-start mb-5">
-                        <FontAwesomeIcon icon={faAddressBook} className="text-3xl text-black" />
+                        <FontAwesomeIcon icon={faAddressBook} className="h-[32px] text-black" />
                         <p className="text-xl sm:text-2xl font-bold text-black mx-4">{title}</p>
                     </div>
                     <p className="text-left font-medium text-base text-slate-600">{description}</p>
