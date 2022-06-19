@@ -119,7 +119,7 @@ export default function Register ({visible, setVisible}) {
                         <Row justify="space-between">
                         <Checkbox color="error" checked={registerDisabled} onChange={() => {setRegisterDisabled(prev => !prev)}}>
                             <Text size={14}>
-                            I agree to the <Link href="/privacy"><span className="text-rose-600">Terms of Service</span></Link>
+                            I agree to the <Link href="/privacy" passHref={true}><span className="text-rose-600">Terms of Service</span></Link>
                             </Text>
                         </Checkbox>
                         </Row>
