@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
         <meta name="description" content="PhotoBytes Studios is an online digital services provider based in Bangladesh which provides customers worldwide with digital works."/>
         <meta name="keywords" content="GFX Design, Web Design, Motion GFX, Writing services, Digital Services"/>
         <meta name="robots" content="index, follow"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="language" content="English"></meta>
       </Head>
       <SessionProvider session={session}>
