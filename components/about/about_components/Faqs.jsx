@@ -5,7 +5,7 @@ import { v4 } from 'uuid'
 function FaqCard ({title, desc, imgSrc}) {
     return (
         <Fragment>
-            <div className="container flex flex-col align-middle justify-center md:h-[400px] lg:h-[500px] h-[530px] hover:scale-[102%] transition-all duration-300 md:my-0 my-5">
+            <div className="container flex flex-col align-middle justify-center md:h-[400px] lg:h-[500px] h-[600px] hover:scale-[102%] transition-all duration-300 md:my-0 my-5">
                 <div className="container shadow-2xl h-full max-h-full">
                     <div className="container flex flex-row align-middle justify-center w-full h-1/2 md:hidden lg:block">
                         <img src={imgSrc} className="h-full mx-auto w-full md:hidden lg:block object-cover" alt="img not available" />

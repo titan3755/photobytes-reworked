@@ -80,3 +80,59 @@ export const faqCards = [
         imgSrc: 'https://images.pexels.com/photos/7346144/pexels-photo-7346144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     }
 ]
+
+export const carouselData = [
+    {
+        imgUrl: 'https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Benefits of using our services',
+        desc: 'You can get the same product from many places, but some things make our products more exclusive and better than others. You\'ll get some cool benefits from purchasing our products.'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Quality over quantity',
+        desc: 'At PhotoBytes Studios, we value quality over quantity. Rather than maximizing profits, we focus on the client\'s experience and satisfaction when using our products. This policy ensures product quality.'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Reliability of delivery',
+        desc: 'Once you have ordered our product, the team at PhotoBytes Studios specializing in that product will work as hard as they can to ensure product delivery within the given deadline.'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/2068975/pexels-photo-2068975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Refund system and affordibility',
+        desc: 'Disappointed with our products? We provide a fully functioning refund system if you wish to replace or return products. Also, product prices are calculated according to economic solvency in different regions.'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Blazing fast and responsive customer support',
+        desc: 'Say goodbye to waiting on replies from customer support. Our responsive and blazing fast customer support will ensure that your problems regarding our products are resolved.'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: '24/7 availability of product',
+        desc: 'As we specialize in digital products, a major advantage is that they never run out. So you don\'t need to worry about product shortages or products running out of stocks.'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Loyalty bonuses',
+        desc: 'Satisfied with our product and services? You will get an exclusive discount when you purchase products from us for the second time. Also, your feedback regarding our products is greatly appreciated.'
+    }
+]
+
+export const projectCards = [
+    {
+        imgUrl: 'https://images.pexels.com/photos/4221068/pexels-photo-4221068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        titleText: 'Lorem ipsum dolor sit amet',
+        descText: 'an quis diam. Ut congue mattis nisl, ac condimentum elit elementum a. Fusce tristique odio sit amet posuere posuere. Maecenas faucibus accumsan est et eleifend. Ut efficitur venenatis ante, ut eleifend ligula elementum quis. Sed congue luctus nisl vitae fringilla. Quisque condimentum pulvinar est ac molestie. Curabitur sed ante non lacus dignissim congue mattis sit amet purus. Etiam mollis magna sit amet tellus iaculis, vitae imperdiet risus vulputat'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/4221068/pexels-photo-4221068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        titleText: 'Lorem ipsum dolor sit amet',
+        descText: 'an quis diam. Ut congue mattis nisl, ac condimentum elit elementum a. Fusce tristique odio sit amet posuere posuere. Maecenas faucibus accumsan est et eleifend. Ut efficitur venenatis ante, ut eleifend ligula elementum quis. Sed congue luctus nisl vitae fringilla. Quisque condimentum pulvinar est ac molestie. Curabitur sed ante non lacus dignissim congue mattis sit amet purus. Etiam mollis magna sit amet tellus iaculis, vitae imperdiet risus vulputat'
+    },
+    {
+        imgUrl: 'https://images.pexels.com/photos/4221068/pexels-photo-4221068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        titleText: 'Lorem ipsum dolor sit amet',
+        descText: 'an quis diam. Ut congue mattis nisl, ac condimentum elit elementum a. Fusce tristique odio sit amet posuere posuere. Maecenas faucibus accumsan est et eleifend. Ut efficitur venenatis ante, ut eleifend ligula elementum quis. Sed congue luctus nisl vitae fringilla. Quisque condimentum pulvinar est ac molestie. Curabitur sed ante non lacus dignissim congue mattis sit amet purus. Etiam mollis magna sit amet tellus iaculis, vitae imperdiet risus vulputat'
+    },
+]

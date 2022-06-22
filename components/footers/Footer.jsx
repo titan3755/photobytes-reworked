@@ -40,7 +40,7 @@ export default function Footer () {
                                                 <a className="text-xs lg:text-sm leading-none hover:text-brand :hover:text-brand text-gray-800 :text-gray-50" target="_blank" href="https://www.facebook.com/groups/photobytes" rel="noopenner noreferrer">Blog</a>
                                             </li>
                                             <li className="mt-6">
-                                                <a className="text-xs lg:text-sm leading-none hover:text-brand :hover:text-brand text-gray-800 :text-gray-50" target="_blank" href="https://www.facebook.com/PhotoBytes999" rel="noopenner noreferrer">PBS News</a>
+                                                <a className="text-xs lg:text-sm leading-none hover:text-brand :hover:text-brand text-gray-800 :text-gray-50" target="_blank" href="https://www.facebook.com/PhotoBytes999" rel="noopenner noreferrer">PB Studios News</a>
                                             </li>
                                         </ul>
                                     </div>
