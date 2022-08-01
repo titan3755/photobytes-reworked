@@ -85,7 +85,7 @@ export default function Content () {
         <Fragment>
             <div className="container p-10 flex flex-col xl:flex-row align-middle justify-center my-5 min-w-full">
                 <div className="container flex flex-col align-middle justify-center p-5 w-auto xl:w-[50%]">
-                    <OldContentCard title="PhotoBytes Studios" description="PhotoBytes Studios is a fairly new company and we are looking forward to its progress in the near future." imgUrl="https://scontent.fdac99-1.fna.fbcdn.net/v/t1.6435-9/200305969_118397360463291_7826146897949815642_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=wxwETRiVYZwAX_d53Lv&tn=2Lf_QzW68X2N8pun&_nc_ht=scontent.fdac99-1.fna&oh=00_AT8RWY_dabqRZyijufILyKKfXrhP9rIHTv88AFJw73ZZkg&oe=62D2AAB7" />
+                    <OldContentCard title="PhotoBytes Studios" description="PhotoBytes Studios is a fairly new company and we are looking forward to its progress in the near future." imgUrl="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                 </div>
                 <div className="container flex flex-col align-middle justify-center p-5 w-full xl:w-[50%]">
                     <div className="container min-w-full xl:w-[500px] xl:min-w-min">
