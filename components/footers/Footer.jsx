@@ -101,7 +101,7 @@ export default function Footer () {
                                 />
                             </a>
                         </Link>
-                        <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 :text-gray-50">2022 Photobytes Studios©️. All Rights Reserved.</p>
+                        <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 :text-gray-50">2025 Photobytes Studios©️. All Rights Reserved.</p>
                     </div>
                 </footer>
             </div>
