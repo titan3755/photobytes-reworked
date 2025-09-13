@@ -1,88 +1,156 @@
-import { Fragment } from 'react'
-import Navbar from '../navbars/Navbar'
-import Footer from '../footers/Footer'
+import { Fragment } from "react";
+import Navbar from "../navbars/Navbar";
+import Footer from "../footers/Footer";
 
-export default function Privacy () {
-    return (
-        <Fragment>
-            <Navbar />
-            <div className="p-10">
-                <br />
-                <h1 className="text-2xl font-extrabold">Privacy Policy for PhotoBytes Studios</h1>
-                <br />
-                <p>At photobytestudios, accessible from www.photobytestudios.ml, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by photobytestudios and how we use it.</p>
-                <br />
-                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
-                <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in photobytestudios. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Free Privacy Policy Generator</a>.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">Consent</h2>
-                <br />
-                <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">Information we collect</h2>
-                <br />
-                <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-                <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
-                <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">How we use your information</h2>
-                <br />
-                <p>We use the information we collect in various ways, including to:</p>
-                <ul>
-                <li>Provide, operate, and maintain our website</li>
-                <li>Improve, personalize, and expand our website</li>
-                <li>Understand and analyze how you use our website</li>
-                <li>Develop new products, services, features, and functionality</li>
-                <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
-                <li>Send you emails</li>
-                <li>Find and prevent fraud</li>
-                </ul>
-                <br />
-                <h2 className="text-2xl font-extrabold">Log Files</h2>
-                <br />
-                <p>photobytestudios follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&apos; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&apos; movement on the website, and gathering demographic information.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">Cookies and Web Beacons</h2>
-                <br />
-                <p>Like any other website, photobytestudios uses &apos;cookies&apos;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.</p>
-                <p>For more general information on cookies, please read <a href="https://www.generateprivacypolicy.com/#cookies">the Cookies article on Generate Privacy Policy website</a>.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">Advertising Partners Privacy Policies</h2>
-                <br />
-                <p>You may consult this list to find the Privacy Policy for each of the advertising partners of photobytestudios.</p>
-                <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on photobytestudios, which are sent directly to users&apos; browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
-                <p>Note that photobytestudios has no access to or control over these cookies that are used by third-party advertisers.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">Third Party Privacy Policies</h2>
-                <br />
-                <p>photobytestudios&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
-                <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers&apos; respective websites.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
-                <br />
-                <p>Under the CCPA, among other rights, California consumers have the right to:</p>
-                <p>Request that a business that collects a consumer&apos;s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
-                <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
-                <p>Request that a business that sells a consumer&apos;s personal data, not sell the consumer&apos;s personal data.</p>
-                <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">GDPR Data Protection Rights</h2>
-                <br />
-                <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
-                <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
-                <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
-                <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
-                <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
-                <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
-                <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
-                <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
-                <br />
-                <h2 className="text-2xl font-extrabold">Children&apos;s Information</h2>
-                <br />
-                <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
-                <p>photobytestudios does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
-            </div>
-            <Footer />
-        </Fragment>
-    )
+export default function Privacy() {
+  return (
+    <Fragment>
+      <Navbar />
+      <div className="max-w-4xl mx-auto p-8 sm:p-12 text-gray-800 leading-relaxed">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-8">
+          Privacy Policy
+        </h1>
+        <p className="text-center text-sm text-gray-500 mb-12">
+          Effective Date: September 2025 <br />
+          Last Updated: September 2025
+        </p>
+
+        <section className="mb-12">
+          <p>
+            At <strong>PhotoBytes Studios</strong>, accessible from{" "}
+            <a
+              href="https://photobytes-reworked.vercel.app"
+              className="text-blue-600 hover:underline"
+            >
+              https://photobytes-reworked.vercel.app
+            </a>
+            , protecting the privacy of our visitors is one of our top
+            priorities. This Privacy Policy explains the types of information
+            collected and how it is used.
+          </p>
+          <p className="mt-4">
+            If you have any questions or need more details about our Privacy
+            Policy, please feel free to contact us.
+          </p>
+        </section>
+
+        <hr className="my-8 border-gray-300" />
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Consent</h2>
+          <p>
+            By using our website, you consent to our Privacy Policy and agree to
+            its terms.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Information We Collect</h2>
+          <p>
+            The personal information you are asked to provide, and the reasons
+            why you are asked to provide it, will always be made clear at the
+            point we request it.
+          </p>
+          <ul className="list-disc ml-6 mt-4 space-y-2">
+            <li>
+              If you contact us directly, we may collect your name, email,
+              phone, and the contents of your message (including attachments).
+            </li>
+            <li>
+              If you register for an account, we may ask for your name, company,
+              address, email, and phone number.
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">How We Use Your Information</h2>
+          <p>We may use the information we collect to:</p>
+          <ul className="list-disc ml-6 mt-4 space-y-2">
+            <li>Provide, operate, and improve our website</li>
+            <li>Personalize your experience</li>
+            <li>Develop new features and services</li>
+            <li>Communicate with you (support, updates, promotions)</li>
+            <li>Send emails and newsletters</li>
+            <li>Detect and prevent fraudulent activity</li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Log Files</h2>
+          <p>
+            Like most websites, PhotoBytes Studios uses log files. These may
+            include IP addresses, browser type, Internet Service Provider (ISP),
+            date/time stamps, referring/exit pages, and click data. This
+            information is not linked to personally identifiable data and is
+            used for analyzing trends, administering the site, and tracking user
+            behavior.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Cookies</h2>
+          <p>
+            We use cookies to store information about visitor preferences and
+            the pages visited. This helps us optimize content and improve user
+            experience. You can disable cookies in your browser settings if you
+            prefer.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Third-Party Services</h2>
+          <p>
+            PhotoBytes Studios may work with third-party services (such as
+            analytics or advertisers). These parties may use cookies or other
+            technologies to measure effectiveness and personalize content. We do
+            not control their tracking technologies.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">
+            Your Data Protection Rights
+          </h2>
+          <p>Depending on your location, you may have rights including:</p>
+          <ul className="list-disc ml-6 mt-4 space-y-2">
+            <li>The right to access your personal data</li>
+            <li>The right to correct inaccurate information</li>
+            <li>The right to request deletion of your data</li>
+            <li>The right to restrict or object to processing</li>
+            <li>The right to data portability</li>
+          </ul>
+          <p className="mt-4">
+            If you make a request, we will respond within one month. To exercise
+            any of these rights, please contact us.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Children&apos;s Privacy</h2>
+          <p>
+            We do not knowingly collect any personally identifiable information
+            from children under the age of 13. If you believe your child
+            provided such information, please contact us and we will promptly
+            remove it.
+          </p>
+        </section>
+
+        <section className="mb-12 text-center">
+          <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, please contact
+            us at{" "}
+            <a
+              href="mailto:info@photobytesstudios.com"
+              className="text-blue-600 hover:underline"
+            >
+              info@photobytesstudios.com
+            </a>
+          </p>
+        </section>
+      </div>
+      <Footer />
+    </Fragment>
+  );
 }
