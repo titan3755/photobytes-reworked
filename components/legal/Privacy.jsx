@@ -145,7 +145,7 @@ export default function Privacy() {
               href="mailto:info@photobytesstudios.com"
               className="text-blue-600 hover:underline"
             >
-              info@photobytesstudios.com
+              info.photobytes@gmail.com
             </a>
           </p>
         </section>
