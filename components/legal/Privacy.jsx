@@ -142,7 +142,7 @@ export default function Privacy() {
             If you have any questions about this Privacy Policy, please contact
             us at{" "}
             <a
-              href="mailto:info@photobytesstudios.com"
+              href="mailto:info.photobytes@gmail.com"
               className="text-blue-600 hover:underline"
             >
               info.photobytes@gmail.com
