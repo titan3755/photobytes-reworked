@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 import Link from 'next/link'
 import { Fragment, useState, useEffect } from 'react'
 import Register from '../auth/registration/Register'
